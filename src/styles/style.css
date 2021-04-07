@@ -556,7 +556,7 @@ button:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-image: url("/src/images/offer/offer.svg");
+  background-image: url("../images/offer/offer.svg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 7.2rem 14.7rem 7.2rem 5.7rem;
