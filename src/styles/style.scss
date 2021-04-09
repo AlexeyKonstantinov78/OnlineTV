@@ -367,6 +367,7 @@ button{
     justify-content: space-between;
     text-align: center;
     margin-top: 2.1rem;
+    flex-wrap: wrap;
     &-item{
         flex: 0 0 14%;
     }
@@ -395,8 +396,9 @@ button{
     justify-content: space-between;
     text-align: center;
     margin-top: 2.1rem;
+    flex-wrap: wrap;
     &-item{
-        flex: 0 0 50%;
+        flex: 0 0 45%;
         border-radius: 2rem;
         &:first-child{
             .marketing__link{
@@ -422,6 +424,7 @@ button{
         top: 50%;
         transform: translate(-50%, -50%);
         object-fit: cover;
+        width: 150%;
     }
 }
 
@@ -492,4 +495,173 @@ footer{
         }
     }
     
+}
+
+@media screen and (max-width: 1100px) {
+    .section-banner{
+        &__image{
+            position: unset;
+            width: 100%;
+        }
+    }
+    .banner{
+        padding-top: 5.2rem;
+        padding-bottom: 7.3rem;
+    }
+    
+}
+
+@media screen and (max-width: 877px) {
+    .control-item {
+        margin-left: 4.1rem;
+    }
+}
+
+@media screen and (max-width: 768px)  {
+    .nav{
+        &-item{
+            margin: 0 1.5rem;
+        }
+    }
+    .control-item {
+        margin-left: 2.1rem;
+    }
+    .section {
+        padding-top: 2rem;
+    }
+    .movies{
+        flex-wrap: wrap;
+        &-item{
+            flex: 0 0 30%;
+            margin-top: 2.1rem;
+        }
+    }
+    .genres{
+        &-item{
+            flex: 0 0 45%;
+        }
+        
+    }
+    .marketing{
+        display: block;
+        &-item{
+            flex: 0 0 45%;
+            border-radius: 2rem;
+            &:first-child{
+                .marketing__link{
+                    border-radius: 2rem;
+                }
+            }
+            &:last-child{
+                .marketing__link{
+                    border-radius: 2rem;
+                }
+            }
+        }
+    }
+    .offer{
+        padding-right: 7.2rem;
+        margin-top: 1rem;
+        margin-bottom: 3.1rem;
+        &__title{
+            font-size: 4.4rem;            
+        }
+    }
+    footer {
+        padding: 2rem 0 2rem;
+    }
+    .footer{
+        &-item{
+            &__img{
+                margin-right: 2rem;
+            }
+        }
+        &-list{
+            &__link{
+                font-size: 1.6rem; 
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .header:hover{
+        .nav{
+            display: flex;
+        }
+    }
+    .header{
+        position: relative;
+    }
+    .nav{
+        position: absolute;
+        left: 2rem;
+        top: 7.5rem;
+        display: none;
+        
+        &-item{
+            margin: 0 0.7rem;
+        }
+    }
+    .control-item {
+        margin-left: 1.5rem;
+    }
+    .banner{
+        &__title{
+            font-size: 4rem;
+        }
+        &-control{
+            font-size: 14px;
+        }
+    }
+    .movies{
+        &-item{
+            flex: 0 0 50%;
+            
+        }
+    }
+    .footer{
+        &-item{
+            display: unset;
+            margin-right: 2rem;        
+        }
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .offer{
+        padding: 2rem;
+        &__title{
+            font-size: 2.4rem;            
+        }
+    }
+}
+@media screen and (max-width: 420px) {
+    
+    .movies{
+        display: block;        
+    }
+    .genres{
+        display: block;
+    }
+    .actors{
+        display: unset;
+        &__link{            
+            display: inline-block;
+        }        
+    }
+    .offer{
+        padding: 2rem 1rem;
+        &__title{
+            font-size: 2rem;            
+        }
+    }
+}
+@media screen and (max-width: 370px) {
+    .banner-control {
+        font-size: 14px;
+        &__btn-main{
+            margin-right: 1rem;
+        }
+    }
 }

@@ -2,15 +2,19 @@ doctype html
 - var pageTitle = 'Online Tv'
 html(lang="ru")
     head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title= pageTitle
         link(rel="stylesheet", href="styles/style.css")
         link(rel="stylesheet", href="styles/normalize.css")
+
     body
         include modules/header 
 
         section.section-banner
-            img(src="./images/Hero.png", alt="Banner").section-banner__image
             .container
+                img(src="./images/Hero.png", alt="Banner").section-banner__image
                 .banner
                     h1.banner__title Zack Snyder's Justice League
                     .banner-info
